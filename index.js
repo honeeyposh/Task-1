@@ -4,7 +4,7 @@ const app = express();
 const profileRoute = require("./route/profile");
 const rateLimiter = rateLimit({
   window: 60 * 1000,
-  max: 5,
+  max: 10,
   standardHeaders: true,
   legacyHeaders: false,
   message: {
